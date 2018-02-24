@@ -40,7 +40,7 @@ public class ImageViewer {
 		SwingUtilities.invokeLater(()->{
 			frame=new JFrame("image viewer");
 			frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-			setPicture("DEFAULT_FILE");
+			setPicture(DEFAULT_FILE);
 			
 			//create component to display image;
 			icon.setImage(screen);
@@ -164,7 +164,7 @@ public class ImageViewer {
 		int dim=9;
 		int[][] kernel=new int[dim][dim];
 		for(int i=0;i<dim;i++) {
-			for(int j=0;j<dim;j++) {
+		for(int j=0;j<dim;j++) {
 				int k=rand.nextInt(10)-5;//*(j-(dim/2));
 				sum+=k;
 				kernel[i][j]=k;
